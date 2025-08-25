@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="output.css" />
+  <link rel="shortcut icon" href="img/pizza.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Foodie</title>
+</head>
+
+<body class="bg-eye">
+  <!-- Navbar -->
+  <header class="text-lead top-0 left-0 fixed right-0 bg-eye shadow-md z-50">
+    <nav class=" max-w-[1440px] container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" class="font-bold text-[2rem] flex items-center font-primary text-gold">Foodie.</a>
+      <!-- desktop menu items -->
+      <ul class="hidden md:flex space-x-8">
+        <li>
+          <a href="#home" class="text-lead hover:text-gold">Home</a>
+        </li>
+        <li>
+          <a href="#menu" class="text-lead hover:text-gold">Menu</a>
+        </li>
+        <li>
+          <a href="#service" class="text-lead hover:text-gold">Service</a>
+        </li>
+        <li>
+          <a href="#about" class="text-lead hover:text-gold">About Us</a>
+        </li>
+        <li>
+          <a href="#contact" class="text-lead hover:text-gold">Contacts</a>
+        </li>
+      </ul>
+
+      <!-- auth button -->
+      <div class="space-x-4">
+        <a href="#" class="relative text-3xl inline-block" id="cart-icon">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span
+            class="absolute bottom-0 right-0 translate-x-1/4 translate-y-1/4 w-[20px] h-[20px] flex items-center justify-center text-[10px] rounded-full bg-gold text-lead">
+            0
+          </span>
+        </a>
+
+        <a href="#"
+          class="hidden md:inline-block bg-gold text-white px-5 py-3 rounded-xl cursor-pointer hover:bg-lead transition duration-300">
+          Sign in &nbsp;
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </a>
+        <!-- hamburger icon -->
+        <a href="#" class="md:hidden text-3xl">
+          <i class="fa-solid fa-burger"></i>
+        </a>
+      </div>
+
+      <!-- mobile menu -->
+      <ul
+        class="hidden w-11/12 max-w-xs blackdrop-blur-md shadow-lg flex flex-col p-8 rounded-2xl gap-y-8 bg-eye border-2 border-gold justify-center items-center gap-2 absolute top-30 left-1/2 transform -translate-x-1/2 z-50">
+        <li>
+          <a href="#home" class="text-lead hover:text-gold">Home</a>
+        </li>
+        <li>
+          <a href="#menu" class="text-lead hover:text-gold">Menu</a>
+        </li>
+        <li>
+          <a href="#service" class="text-lead hover:text-gold">Service</a>
+        </li>
+        <li>
+          <a href="#about" class="text-lead hover:text-gold">About Us</a>
+        </li>
+        <li>
+          <a href="#contact" class="text-lead hover:text-gold">Contacts</a>
+        </li>
+
+        <li>
+          <a href="#"
+            class="hidden md:inline-block bg-gold text-white px-5 py-3 rounded-xl cursor-pointer hover:bg-lead transition duration-300">
+            Sign in &nbsp;
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- section part -->
+  <!-- hero section -->
+  <main>
+    <section class="max-w-[1440px] container mx-auto px-4 py-28 flex flex-col md:flex-row items-center gap-12">
+      <!-- left content -->
+      <div class="md:w-1/2 mb-8 md:mb-0 space-y-8">
+        <h1 class="font-primary lg:text-6xl md:text-5xl text-5xl font-bold text-lead leading-tight">
+          Enjoy Your <br />
+          Delicious
+          <span class="text-gold">Food</span>
+        </h1>
+        <p class="font-primary text-lg leading-relaxed max-w-xl">
+          We will fill your tummy with delicious food with fast delivery.
+        </p>
+
+        <div class="flex items-center gap-6">
+          <a href="#"
+            class="bg-gold text-black font-bold px-5 py-3 rounded-xl cursor-pointer hover:bg-lead hover:text-white transition duration-300">
+            Order Now</a>
+
+          <a href="#"
+            class="h-[40px] w-[40px] bg-yellow text-2xl flex items-center justify-center text-lead rounded-lg hover:bg-lead shadow-[0_4px_10px_rgba(0,0,0,0.3)] hover:text-white transition duration-300"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"
+            class="h-[40px] w-[40px] bg-yellow text-2xl flex items-center justify-center text-lead rounded-lg hover:bg-lead shadow-[0_4px_10px_rgba(0,0,0,0.3)] hover:text-white transition duration-300"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="#"
+            class="h-[40px] w-[40px] bg-yellow text-2xl flex items-center justify-center text-lead rounded-lg hover:bg-lead shadow-[0_4px_10px_rgba(0,0,0,0.3)] hover:text-white transition duration-300"><i
+              class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"
+            class="h-[40px] w-[40px] bg-yellow text-2xl flex items-center justify-center text-lead rounded-lg hover:bg-lead shadow-[0_4px_10px_rgba(0,0,0,0.3)] hover:text-white transition duration-300"><i
+              class="fa-brands fa-google-plus-g"></i></a>
+        </div>
+      </div>
+      <!-- right content -->
+      <div class="md:w-1/2">
+        <img src="img/delivery-boy.png" alt="hero img" class="w-full" />
+      </div>
+    </section>
+
+    <!-- service section -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+      <div class="text-center mb-12">
+        <h5 class="text-gold font-semibold mb-4 uppercase">Our Services</h5>
+        <h2 class="font-bold font-primary text-5xl">How Does It Work</h2>
+      </div>
+
+      <!-- service icon -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 py-7">
+        <div class="flex flex-col items-center">
+          <div class="w-24 h-24 mb-6 flex items-center justify-between">
+            <img src="img/easy-to-order.png" alt="" />
+          </div>
+          <h3 class="text-2xl mb-3 font-bold">Easy to Order</h3>
+          <p class="text-lead text-center">
+            You only need a few steps in ordering food.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="w-24 h-24 mb-6 flex items-center justify-between">
+            <img src="img/best-quality.png" alt="" />
+          </div>
+          <h3 class="text-2xl mb-3 font-bold">Best Quality</h3>
+          <p class="text-lead text-center">
+            Not only fast for us in quality is also number one.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="w-24 h-24 mb-6 flex items-center justify-between">
+            <img src="img/fast-delivery.png" alt="" />
+          </div>
+          <h3 class="text-2xl mb-3 font-bold">Fast Delivery</h3>
+          <p class="text-lead text-center">
+            Delivery that is always on time even faster.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="max-w-7xl mx-auto py-16">
+      <div class="text-center mb-12">
+        <h5 class="text-gold font-semibold mb-4 uppercase">Our Menu</h5>
+        <h2 class="font-bold font-primary text-5xl">The Most Popular</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <!-- Product Card -->
+
+        <!-- Card 1 -->
+<div
+  class="bg-white hover:bg-amber-50 p-6 rounded-2xl border-2 border-yellow-400 hover:border-yellow-500 shadow-sm hover:shadow-md transition flex flex-col items-center">
+  <img src="img/burger.png" alt="Double Beef Burger" class="w-full max-w-[180px] mb-4" />
+  <h4 class="text-center text-lg font-bold mb-1">Double Beef Burger</h4>
+  <p class="text-lead font-semibold mb-4">$200</p>
+  <a href="#"
+     class="add-to-cart-btn bg-yellow-400 text-lead text-sm px-5 py-3 rounded-sm hover:bg-lead hover:text-white transition duration-300"
+     data-title="Double Beef Burger"
+     data-price="200"
+     data-img="img/burger.png">
+    Add to Cart
+  </a>
+</div>
+
+<!-- Card 2 -->
+<div
+  class="bg-white hover:bg-amber-50 p-6 rounded-2xl border-2 border-yellow-400 hover:border-yellow-500 shadow-sm hover:shadow-md transition flex flex-col items-center">
+  <img src="img/pizza.png" alt="Pizza" class="w-full max-w-[180px] mb-4" />
+  <h4 class="text-center text-lg font-bold mb-1">Pizza</h4>
+  <p class="text-lead font-semibold mb-4">$220</p>
+  <a href="#"
+     class="add-to-cart-btn bg-yellow-400 text-lead text-sm px-5 py-3 rounded-sm hover:bg-lead hover:text-white transition duration-300"
+     data-title="Pizza"
+     data-price="220"
+     data-img="img/pizza.png">
+    Add to Cart
+  </a>
+</div>
+
+<!-- Card 3 -->
+<div
+  class="bg-white hover:bg-amber-50 p-6 rounded-2xl border-2 border-yellow-400 hover:border-yellow-500 shadow-sm hover:shadow-md transition flex flex-col items-center">
+  <img src="img/fried-chicken.png" alt="Fried Chicken" class="w-full max-w-[180px] mb-4" />
+  <h4 class="text-center text-lg font-bold mb-1">Fried Chicken</h4>
+  <p class="text-lead font-semibold mb-4">$180</p>
+  <a href="#"
+     class="add-to-cart-btn bg-yellow-400 text-lead text-sm px-5 py-3 rounded-sm hover:bg-lead hover:text-white transition duration-300"
+     data-title="Fried Chicken"
+     data-price="180"
+     data-img="img/fried-chicken.png">
+    Add to Cart
+  </a>
+</div>
+
+<!-- Card 4 -->
+<div
+  class="bg-white hover:bg-amber-50 p-6 rounded-2xl border-2 border-yellow-400 hover:border-yellow-500 shadow-sm hover:shadow-md transition flex flex-col items-center">
+  <img src="img/chicken-roll.png" alt="Chicken Roll" class="w-full max-w-[180px] mb-4" />
+  <h4 class="text-center text-lg font-bold mb-1">Chicken Roll</h4>
+  <p class="text-lead font-semibold mb-4">$150</p>
+  <a href="#"
+     class="add-to-cart-btn bg-yellow-400 text-lead text-sm px-5 py-3 rounded-sm hover:bg-lead hover:text-white transition duration-300"
+     data-title="Chicken Roll"
+     data-price="150"
+     data-img="img/chicken-roll.png">
+    Add to Cart
+  </a>
+</div>
+<!-- card 5 -->
+<div
+  class="bg-white hover:bg-amber-50 p-6 rounded-2xl border-2 border-yellow-400 hover:border-yellow-500 shadow-sm hover:shadow-md transition flex flex-col items-center">
+  <img src="img/sandwich.png" alt="Chicken Roll" class="w-full max-w-[180px] mb-4" />
+  <h4 class="text-center text-lg font-bold mb-1">Sub Sandwich</h4>
+  <p class="text-lead font-semibold mb-4">$6.99</p>
+  <a href="#"
+     class="add-to-cart-btn bg-yellow-400 text-lead text-sm px-5 py-3 rounded-sm hover:bg-lead hover:text-white transition duration-300"
+     data-title="Sub Sandwich"
+     data-price="6.99"
+     data-img="img/sandwich.png">
+    Add to Cart
+  </a>
+</div>
+<!-- card 6 -->
+<div
+  class="bg-white hover:bg-amber-50 p-6 rounded-2xl border-2 border-yellow-400 hover:border-yellow-500 shadow-sm hover:shadow-md transition flex flex-col items-center">
+  <img src="img/spaghetti.png" alt="Chicken Roll" class="w-full max-w-[180px] mb-4" />
+  <h4 class="text-center text-lg font-bold mb-1">Italian Spaghetti</h4>
+  <p class="text-lead font-semibold mb-4">$7.65</p>
+  <a href="#"
+     class="add-to-cart-btn bg-yellow-400 text-lead text-sm px-5 py-3 rounded-sm hover:bg-lead hover:text-white transition duration-300"
+     data-title="Italian Spaghetti"
+     data-price="7.65"
+     data-img="img/spaghetti.png">
+    Add to Cart
+  </a>
+</div>
+<!-- card 7 -->
+<div
+  class="bg-white hover:bg-amber-50 p-6 rounded-2xl border-2 border-yellow-400 hover:border-yellow-500 shadow-sm hover:shadow-md transition flex flex-col items-center">
+  <img src="img/spring-roll.png" alt="Chicken Roll" class="w-full max-w-[180px] mb-4" />
+  <h4 class="text-center text-lg font-bold mb-1">Spring Roll</h4>
+  <p class="text-lead font-semibold mb-4">$9.31</p>
+  <a href="#"
+     class="add-to-cart-btn bg-yellow-400 text-lead text-sm px-5 py-3 rounded-sm hover:bg-lead hover:text-white transition duration-300"
+     data-title="Spring Roll"
+     data-price="9.31"
+     data-img="img/spring-roll.png">
+    Add to Cart
+  </a>
+</div>
+<!-- card 8 -->
+<div
+  class="bg-white hover:bg-amber-50 p-6 rounded-2xl border-2 border-yellow-400 hover:border-yellow-500 shadow-sm hover:shadow-md transition flex flex-col items-center">
+  <img src="img/chicken-roll.png" alt="Chicken Roll" class="w-full max-w-[180px] mb-4" />
+  <h4 class="text-center text-lg font-bold mb-1">Chicken Roll</h4>
+  <p class="text-lead font-semibold mb-4">$150</p>
+  <a href="#"
+     class="add-to-cart-btn bg-yellow-400 text-lead text-sm px-5 py-3 rounded-sm hover:bg-lead hover:text-white transition duration-300"
+     data-title="Chicken Roll"
+     data-price="150"
+     data-img="img/chicken-roll.png">
+    Add to Cart
+  </a>
+</div>
+        <!-- cart tab -->
+        <div id="cart-tab"
+          class="hidden fixed right-0 top-0 w-full max-w-sm h-full bg-eye shadow-lg z-50 p-6 overflow-y-auto">
+          <h2 class="text-2xl font-bold mb-6 font-primary text-center">Your Cart</h2>
+
+          <!-- Cart Item -->
+          <div class="space-y-6">
+            <!-- Item 1 -->
+            <!-- <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4">
+                <img src="img/fried-chicken.png" alt="Fried Chicken"
+                  class="w-12 h-12 object-contain">
+                <div>
+                  <h4 class="font-semibold">Fried Chicken</h4>
+                  <p class="text-gray-700 text-sm">$13.45</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button
+                  class="w-6 h-6 rounded bg-gray-200 cursor-pointer text-xl leading-none flex items-center justify-center">−</button>
+                <span>1</span>
+                <button
+                  class="w-6 h-6 rounded bg-gray-200 cursor-pointer text-xl leading-none flex items-center justify-center">+</button>
+              </div>
+            </div> -->
+          </div>
+
+          <!-- Total and Buttons -->
+          <div class="mt-10">
+            <div class="bg-[#f9cd45] text-center text-lg font-bold px-4 py-2 rounded">
+              Total: $62.42
+            </div>
+            <div class="mt-6 flex gap-4">
+              <button id="close-cart"
+                class="flex-1 bg-gray-800 cursor-pointer text-white py-2 rounded-md hover:bg-black">Close</button>
+              <button class="flex-1 bg-yellow-500 cursor-pointer text-black py-2 rounded-md hover:bg-yellow-600">Check
+                out</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- reviews section -->
+    <section class="max-w-[1440px] mx-auto px-4 py-28 flex flex-col md:flex-row items-center gap-12">
+      <!-- Image (top on mobile, left on desktop) -->
+      <div class="w-full md:w-1/2 order-1 md:order-1">
+        <img src="img/delivery-boy-with-phone.png" alt="delivery boy" class="w-full" />
+      </div>
+
+      <!-- Review content (bottom on mobile, right on desktop) -->
+      <div class="w-full md:w-1/2 order-2 md:order-2">
+        <h5 class="font-primary uppercase text-2xl text-gold font-bold">
+          Our reviews
+        </h5>
+        <h2 class="font-primary text-lead text-4xl font-bold">
+          What They Say?
+        </h2>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper mt-8 w-full overflow-hidden">
+          <div class="swiper-wrapper">
+            <!-- review 1 -->
+            <div class="swiper-slide">
+              <div class="mt-4 flex items-center gap-4">
+                <div class="w-20 h-20">
+                  <img src="img/dp2.png.jpg" alt="dp" class="w-full h-full object-cover rounded-full">
+                </div>
+                <div>
+                  <h4 class="font-primary font-semibold text-2xl">Cristiano Ronaldo</h4>
+                  <div class="text-gold">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-5 font-primary text-2xl">
+                Foodie is the best. Besides the many delicious meals,
+                the service is also very good, especially very fast
+                delivery. I highly recommend Foodie to you.
+              </p>
+            </div>
+
+            <!-- review 2 -->
+            <div class="swiper-slide">
+              <div class="mt-4 flex items-center gap-4">
+                <div class="w-20 h-20">
+                  <img src="img/dp3.png.jpg" alt="dp" class="w-full h-full object-cover rounded-full">
+                </div>
+                <div>
+                  <h4 class="font-primary font-semibold text-2xl">Ankara Messi</h4>
+                  <div class="text-gold">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-5 font-primary text-2xl">
+                Fresh ingredients, creative menu, and warm service
+                make this spot a hidden gem. Perfect for casual dinners
+                or special nights out. Truly a foodie’s paradise!
+              </p>
+            </div>
+
+            <!-- review 3 -->
+            <div class="swiper-slide">
+              <div class="mt-4 flex items-center gap-4">
+                <div class="w-20 h-20">
+                  <img src="img/dp1.png.png" alt="dp" class="w-full h-full object-cover rounded-full">
+                </div>
+                <div>
+                  <h4 class="font-primary font-semibold text-2xl">Magician Neymar</h4>
+                  <div class="text-gold">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-5 font-primary text-2xl">
+                Delicious dishes, cozy ambiance, and exceptional service.
+                A must-visit for food lovers seeking bold flavors and
+                unforgettable dining experiences. Highly recommended,
+                every bite delights!
+              </p>
+            </div>
+          </div>
+
+          <!-- slider button -->
+          <div class="flex justify-between mt-6">
+            <a href="#" id="prev"
+              class="w-10 h-10 rounded-full text-black bg-gold  hover:bg-lead hover:text-white flex items-center justify-center">
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <a href="#" id="next"
+              class="w-10 h-10 rounded-full text-black bg-gold hover:bg-lead hover:text-white  flex items-center justify-center">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- mobile app -->
+    <section class="container rounded-[32px] mx-auto px-4 py-16 md:py-24 items-center justify-center">
+      <div class="container bg-yellow py-12 px-4 md:px-16 rounded-2xl items-center justify-between gap-12">
+        <div class="flex flex-col md:flex-row items-center gap-10 md:gap-24">
+          <!-- Left side: Image -->
+          <div class="md:w-1/2 flex justify-center ">
+            <img src="img/mobile-app.png" alt="App" class="w-20px h-20px object-contain block">
+          </div>
+          <!-- Right side: Content -->
+          <div class="md:w-1/2 space-y-8">
+            <h5 class="text-gold font-semibold uppercase mb-2 leading-tight">Our Application</h5>
+            <h2 class="text-lead font-bold text-3xl md:text-5xl leading-tight mb-4">Simple Way To Order Your Food</h2>
+            <p class="text-[#444] text-base md:text-lg mb-8">Discover food wherever and whenever and get your food
+              delivery quickly.</p>
+            <a href="#"
+              class="px-4 py-3 bg-gold text-black font-semibold rounded-xl hover:bg-lead hover:text-white transition duration-300">Get
+              the app</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- newslatter -->
+    <section class="bg-white py-16 px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h5 class="text-gold text-center uppercase tracking-widest   text-base font-semibold mb-4">Our Subscribe</h5>
+        <h2 class=" text-lead  font-primary text-center font-bold mb-4 text-3xl md:text-5xl sm:text-6xl ">Subscribe To
+          Our Newsletter</h2>
+        <p class="text-base md:text-lg mb-10">We recommend you to subscribe our newspaper, drop your email below to get
+          daily update about us.</p>
+
+        <form class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-xl mx-auto">
+          <input type="email" placeholder="Enter you email address"
+            class="flex-1 px-5 py-4 rounded-xl bg-white shadow text-base md:text-lg outline-none focus:ring-2">
+          <button type="submit"
+            class="px-4 py-3 cursor-pointer bg-gold font-semibold hover:bg-lead hover:text-white rounded-xl">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+        <!-- Left: Logo & Description -->
+        <div class="lg:col-span-4">
+          <div class="flex items-center gap-2 mb-6">
+            <h2 class="text-4xl font-primary font-bold text-gold">Foodie.</h2>
+          </div>
+          <p class="text-lead">We will fill your tummy <br> with delicious food with fast delivery</p>
+
+          <!-- Social Icons -->
+          <div class="flex items-center gap-4 mt-8 flex-wrap">
+            <a href="#"
+              class="h-[40px] w-[40px] bg-white text-2xl flex items-center justify-center text-lead rounded-lg hover:bg-lead hover:text-white shadow-md transition duration-300">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#"
+              class="h-[40px] w-[40px] bg-white text-2xl flex items-center justify-center text-lead rounded-lg hover:bg-lead hover:text-white shadow-md transition duration-300">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#"
+              class="h-[40px] w-[40px] bg-white text-2xl flex items-center justify-center text-lead rounded-lg hover:bg-lead hover:text-white shadow-md transition duration-300">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#"
+              class="h-[40px] w-[40px] bg-white text-2xl flex items-center justify-center text-lead rounded-lg hover:bg-lead hover:text-white shadow-md transition duration-300">
+              <i class="fa-brands fa-google-plus-g"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: 3 Sections - Our Menu, Company, Support -->
+        <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+          <div>
+            <h3 class="font-medium text-lg font-primary mb-4">Our Menu</h3>
+            <ul class="space-y-3 text-[#4F5665]">
+              <li><a href="#" class="hover:text-black">Special</a></li>
+              <li><a href="#" class="hover:text-black">Popular</a></li>
+              <li><a href="#" class="hover:text-black">Categories</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-medium text-lg font-primary mb-4">Company</h3>
+            <ul class="space-y-3 text-[#4F5665]">
+              <li><a href="#" class="hover:text-black">Why Foodie</a></li>
+              <li><a href="#" class="hover:text-black">Partner with us</a></li>
+              <li><a href="#" class="hover:text-black">About us</a></li>
+              <li><a href="#" class="hover:text-black">FAQ's</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-medium text-lg font-primary mb-4">Support</h3>
+            <ul class="space-y-3 text-[#4F5665]">
+              <li><a href="#" class="hover:text-black">Account</a></li>
+              <li><a href="#" class="hover:text-black">Support Center</a></li>
+              <li><a href="#" class="hover:text-black">Feedback</a></li>
+              <li><a href="#" class="hover:text-black">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

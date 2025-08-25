@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --font-primary: "Roboto Condensed", sans-serif;
+
+    --color-lead: #212121;
+    --color-gold: #F2BD12;
+    --color-eye: #F7EED6;
+    --color-yellow: #FCF1CC;
+    --color-white: #fff;
+}
